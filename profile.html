@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+    <!-- Include navigation bar -->
+    <include-th:fragment th:fragment="navbar">
+        <!-- Your navigation bar code here -->
+    </include-th:fragment>
+
+    <div>
+        <h2>My Profile</h2>
+        <p>Welcome, <span th:text="${student.firstName}"></span>!</p>
+        <p>Email: <span th:text="${student.email}"></span></p>
+        <!-- Display other profile information as needed -->
+    </div>
+</body>
+</html>
